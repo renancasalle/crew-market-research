@@ -1,17 +1,18 @@
 research_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Conduct an in-depth research about {topic}, focusing on the most recent and relevant developments.
+    Prioritize high-authority sources, official reports, and peer-reviewed studies.
+    Ensure that the information is up to date for the current year ({current_year}).
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    A structured list with 10 key insights about {topic}, each with a short summary and a source link when available.
   agent: researcher
 
 reporting_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Review the research findings and expand each key insight into a well-structured report.
+    Ensure the report provides context, explanations, and any relevant data points.
+    The final report should be easy to understand, detailed, and actionable.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
+    A fully structured report in markdown format (excluding '```'), with a clear introduction, main sections for each key insight, 
+    and a concluding summary highlighting key takeaways.
   agent: reporting_analyst
